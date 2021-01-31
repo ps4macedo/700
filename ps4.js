@@ -107,7 +107,7 @@ function setupRW() {
 	g_jsview_butterfly = new Int64(bf);
 	if(!read64(g_jsview_butterfly.sub(16)).equals(new Int64("0xffff000000001337")))
 		die("[!] Failed to setup addrof/fakeobj primitives");
-	debug_log("D E S B L O Q U E A D O ! ! !");
+	debug_log("P R O N T O ! ! !");
 	debug_log("");
 	debug_log("");
 	debug_log("AGUARDE o carregamento do carga útil.");
@@ -343,6 +343,8 @@ function dumpTargetObj() {
 function findTargetObj() {
 	for (let i = 0; i < g_arr_ab_1.length; i++) {
 		if (!Int64.fromDouble(g_arr_ab_1[i][2]).equals(Int64.Zero)) {
+			debug_log("P r o c e s s a n d o . . . ");
+			debug_log("");
 			if (g_round === 2) {
 				g_timer_leak = Int64.fromDouble(g_arr_ab_1[i][2]);
 				g_message_heading_leak = Int64.fromDouble(g_arr_ab_1[i][4]);
@@ -391,8 +393,6 @@ function sprayHTMLTextArea() {
 	debug_log("");
 	debug_log("");
 	debug_log("I n i c i a n d o . . .");
-	debug_log("");
-	debug_log("P r o c e s s a n d o . . . ");
 	debug_log("");
 
 	let textarea_div_elem = document.createElement("div");
