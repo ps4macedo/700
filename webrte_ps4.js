@@ -419,8 +419,6 @@ function dumpTargetObj() {
 function findTargetObj() {
 	for (let i = 0; i < g_arr_ab_1.length; i++) {
 		if (!Int64.fromDouble(g_arr_ab_1[i][2]).equals(Int64.Zero)) {
-			debug_log("P r o c e s s a n d o . . . ");
-			debug_log("");		
 			if (g_round === 2) {
 				g_timer_leak = Int64.fromDouble(g_arr_ab_1[i][2]);
 				g_message_heading_leak = Int64.fromDouble(g_arr_ab_1[i][4]);
@@ -470,6 +468,8 @@ function sprayHTMLTextArea() {
 	debug_log("");
 	debug_log("I n i c i a n d o . . .");
 	debug_log("");
+	debug_log("P r o c e s s a n d o . . . ");
+	debug_log("");		
 
 	let textarea_div_elem = document.createElement("div");
 	document.body.appendChild(textarea_div_elem);
